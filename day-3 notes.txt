@@ -1,0 +1,36 @@
+#operations:
+append()-adds a number in the end of list.
+extend()-adds two or more numberws in the end of list.
+insert()-insert a number between two required numbers.
+remove()-it removes a number from the list.
+pop()-removes and returns a number in index.
+clear()-removes all numbers from the list.
+index()-returns the index of first matched item.
+count()-it gives count of no.of elements present in list
+sort()-it arrange list in ascending order.
+reverse()-reverse order of list.
+copy()-returns the shallow copy of list. 
+
+programs:
+1.create a list with 10 items.print the elements one by one.
+2.create a list with 5 float numbers find out and display sum & total & average.
+3.after creating a list with 6 elements  from the user extract only even number and print.
+
+#set:
+1.duplicates are not allowed, it is unordered, indexind not allowed.
+2.to remove-discard>(won't throw in error).
+3.to add only one element-add().
+4.to extend more than two-update().
+
+
+#tuple:
+1.tuple is ordered,normal brackets.
+2.it has only index and count.
+
+
+#dictionary:
+1.dictionary contains elements with two units-keys & units.
+2.keys must be unique.
+
+
+
