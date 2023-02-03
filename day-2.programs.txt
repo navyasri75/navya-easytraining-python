@@ -1,0 +1,165 @@
+
+program 1:get any two numbers both should be <=15,perform bitwise AND OR XOR.
+
+n1,n2=int(input("Enter")),int(input("Enter"))
+a=n1&n2
+o=n1|n2
+x=n1^n2
+print("and operation:",a)
+print("or operation:",o)
+print("xor operation:",x)
+output:
+Enter5
+Enter2
+and operation: 0
+or operation: 7
+xor operation: 7
+
+
+program2:
+
+n=int(input("enter number:"))
+if n%2==0:
+    if n>0:
+        print('even positive')
+    else:
+        print('even negative')
+if n%2==1:
+    if n>0:
+        print('odd positive')
+    else:
+        print('odd negative')
+output:
+enter number:5
+odd positive
+enter number:-8
+even negative
+
+
+program3:if elif else.
+
+t=25
+if t>26:
+    print('yes')    
+elif t==26:
+    print('equal')
+elif t<26:
+    print('its less')
+output:
+its less
+
+
+program 4:3 biggest numbers.
+
+n1,n2,n3=int(input('enter')),int(input('enter')),int(input('enter'))
+if n1>n2 and n1>n3:
+    print('n1 is biggest number')
+elif n2>n3:
+    print('n2 is biggest number')
+else:
+    print('n3 is biggest number')
+output:
+enter5
+enter8
+enter9
+n3 is biggest number
+
+
+program 5:multiple numbers
+
+print("its","a","good","day",end="*")
+print("all","is","good",sep="_",end="*")
+print('joy')
+output:
+its a good day*all_is_good*joy
+
+
+program 6:divisible by 5 & 2.
+
+n=int(input('enter'))
+if n%2==0 and n%5==0:
+    print('n is divisible by 2 and 5')
+else:
+    print('n is not divisible by 2 and 5')
+output:
+enter10
+n is divisible by 2 and 5
+enter55
+n is not divisible by 2 and 5
+
+
+program  7:
+
+for i in range(1,101):
+    if i%5==0:
+        print(i)
+output:
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+
+program 8:else if ladder.
+
+t=27
+if t>26:
+    print('yes')    
+elif t==26:
+    print('equal')
+elif t<26:
+    print('its less')
+ouput:
+yes
+
+
+program 9:divisible by 11.
+
+n=int(input('enter'))
+if n%11==0:
+    print('n is divisible by 11')
+else:
+     print('n is not divisible by 11')
+output:
+enter22
+n is divisible by 11
+
+
+program 10:random guess.
+
+import random
+n=random.randrange(1,1000)
+guess=int(input('enter any number'))
+while n!=guess:
+    if n<guess:
+        print('Too high')
+        guess=int(input('enter number again'))
+    elif n>guess:
+        print('Too low')
+        guess=int(input('enter number again'))
+    else:
+        break
+print('u guessed it right!!')
+
+
+
+
+
+
+
+
