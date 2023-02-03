@@ -1,0 +1,201 @@
+#dictionary:
+
+program 1:
+
+d={n:n*n for n in range(1,5)}
+print(d)
+output:
+{1: 1, 2: 4, 3: 9, 4: 16}
+
+
+program 2:
+
+old={'rice':50,'dal':80,'oil':200}
+new={product:price*5 for (product,price) in old.items()}
+print(new)
+output:
+{1: 1, 2: 4, 3: 9, 4: 16}
+{'rice': 250, 'dal': 400, 'oil': 1000}
+
+  
+program 3:create a list with eight cusmor names display a dictionary which has customer names along with discount for them from a particular shop
+
+import random
+cus=['navyu','satya','janu','pravali','kommu','madhu','rosh','girija']
+cus_dis={names:random.randint(1,100) for names in cus}
+print(cus_dis)
+output:
+{'navyu': 39, 'satya': 18, 'janu': 37, 'pravali': 93, 'kommu': 98, 'madhu': 63, 'rosh': 44, 'girija': 37}
+
+program 4:create two list, first list should be students and second list should have marks(1-500),display dic that should contain their percentage.
+  students=keys , marks=values.
+
+
+Case1:
+s=['janu','navyu','satya','revathi','madhu']
+m=[400,450,470,465,460]
+prct=[]
+for n in m:
+    p=n/500*100
+    prct.append(p)
+
+dic={a:b for (a,b) in zip(s,prct)}
+print(dic)
+output:
+{'janu': 80.0, 'navyu': 90.0, 'satya': 94.0, 'revathi': 93.0, 'madhu': 92.0}
+
+Case2:
+import random
+s=list(map(str,input('enter names:').split()))
+m=[]
+for i in range(len(s)):
+    p=(random.randint(300,500)/500)*100
+    m.append(p)
+dic={n:s for (n,s) in zip(s,m)}
+print(dic)
+output:
+enter names:navya vijju sneha
+{'navya': 71.8, 'vijju': 99.8, 'sneha': 91.0}
+
+
+"hai im "navya""
+SyntaxError: invalid syntax
+"hi im 'navya'"
+"hi im 'navya'"
+'hi im "navya"'
+'hi im "navya"'
+n="navya"
+n
+'navya'
+n='navyu'
+n
+'navyu'
+
+concatenate
+s1+s2
+
+repetition
+s1*3
+
+
+##String methods:
+
+s.upper()-n.upper()
+          'NAVYA'
+s.lower() or s.casefold()-s='Navya'
+                          s.lower()
+                          'navya'
+                          s.casefold()
+                          'navya'
+s.capitalize()-s.capitalize()
+               'Navya'
+s.replace()-s.replace('a','u')
+            'nuvyu'
+s.strip()-s.strip()
+          'navya'
+s.split()-s.split()
+          ['navya']
+s.center()-s.center(10,'*')
+           '**navya***'
+s.count()-s.count('a')
+          2
+          s.count('a',0,len(s))
+          2
+s.endswith()-s.endswith('a',0,len(s))
+             True
+s.find()-s.find('v')
+         2
+         s.find('y')
+         3
+s.index()-s.index('a')
+          1
+
+
+#mutable-
+e.g.
+l=[1,2,3,4,5]
+l
+[1, 2, 3, 4, 5]
+id(l)
+3270889275968
+l.append(7)
+l
+[1, 2, 3, 4, 5, 7]
+id(l)
+3270889275968
+
+#immutable-
+e.g.
+r=200
+r
+200
+id(r)
+140726153772040
+r=r*2
+r
+400
+id(r)
+3270891175888.
+
+
+program 1:
+s=input('enter:')
+c=input()
+for i in s:
+    if i==c:
+        flag=1
+        break
+    else:
+        flag=0
+if flag==1:
+    print('it is present')
+else:
+    print('not present')
+output:
+enter:navya
+a
+it is present
+enter:navya
+d
+not present
+
+2.
+s=input('enter:')
+c=input('chrc:')
+if c in s:
+    print('its present')
+else:
+    print('not present')
+output:
+enter:good girl
+chrc:l
+its present
+
+
+program 2:check if the string contain space or not.
+
+s=input('string:')
+n=(' ')
+if n in s:
+     print('space')
+else:
+    print('no space')
+output:
+string:huryb uuyguiy
+space
+string:giujgiuhtgi
+no space
+
+
+program 4:create a list with vowels get one string as input.count vowels from the string and display the result.
+
+l=['a','i','o','u','e']
+s=input('string:')
+count=0
+for i in s:
+    if i in l:
+        count=count+1
+print(count)
+output:
+string:dggfyaigfiy
+3

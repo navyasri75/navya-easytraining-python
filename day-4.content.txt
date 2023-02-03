@@ -1,0 +1,43 @@
+#Dictionary comprehension:creating a new dictionary from previous dictionary.
+
+
+
+program 1:create a list with eight cusmor names display a dictionary which has customer names along with discount for them from a particular shop
+
+program 2:create two list, first list should be students and second list should have marks(1-500),display dic that should contain their percentage.
+  students=keys , marks=values.
+
+
+#STRING Methods:
+upper():Converts string into upper case
+lower() or casefoldd() :Converts string into lower case
+capatilize():Converts the first character to upper case
+replace():Returns a string where a specified value is replaced with a specified value
+strip():Returns a trimmed version of the string
+split():Splits the string at the specified separator, and returns a list
+center():Returns a centered string
+count():Returns the number of times a specified value occurs in a string
+endswith():Returns true if the string ends with the specified value
+find():Searches the string for a specified value and returns the position of where it was found
+index():Searches the string for a specified value and returns the position of where it was found
+
+
+#mutable and unmutable:
+mutable-can be changed after creation
+e.g. 1.list
+     2.set
+     3.dictionary
+immutable-can't be changed after creation
+e.g. 1.int
+     2.float
+     3.string
+     4.tuple
+     5.bool
+
+
+
+program 1:get one srting as  input along with a character find out & display wheather the character is present or not.
+program 2:check wheather the given string is palindrome or not.
+program 3:check if the string contain space or not,if yes count no of spaces.
+program 4:create a list with vowels get one string as input.count vowels from the string and display the result.
+ 
