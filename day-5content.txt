@@ -1,0 +1,27 @@
+###Functions:
+Clasifications-
+1.predefined functioins
+2.user defined function
+
+for code reusability we use functions
+e.g:lets say we want to use  a particular concept multiple times in our program insted of writing the same code multiple time we can write it onces include that inside a function and can call the function wherever we need it 
+
+TYPES:1.functions without argument without return value
+      2.without argument with return value
+      3.with argument without return value
+      4.with argument with return value
+
+def()-function defination or description
+sample()-call
+
+programs:
+1.lemons program using funvtions type 1.
+2.find factors of the given numbers using type2.
+3.print multiplication table of a given number using function type 3.
+4.find out sum of digits of given number using function type 4.
+
+
+##RECURSIVE OR RECURSION METHOD:
+
+A function which calls itself is called recursive.
+

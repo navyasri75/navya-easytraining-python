@@ -1,0 +1,245 @@
+#dispaly whole year calendar
+import calendar
+
+print("Full calendar")
+print(calendar.calendar(2022))
+
+print("particular month")
+print(calendar.month(2021,3))
+
+print('set first day of the week')
+
+
+
+#display date and time
+
+import datetime
+
+a=datetime.datetime.now()
+print(a)
+
+s=a.strftime('%y')
+f=a.strftime('%Y')
+print('year short vertion',s)
+print('year full vertion',f)
+
+output:
+2023-02-03 10:14:18.920645
+year short vertion 23
+year full vertion 2023
+
+
+##def
+
+def sample():
+    print('great day')
+    print('good time')
+
+
+sample()
+print('today')
+sample()
+
+output:
+great day
+good time
+today
+great day
+good time
+
+# without orgument without written value
+
+def multi():
+    n1=int(input('enter a number'))
+    n2=int(input('enter a number'))
+    n3=int(input('enter a number'))
+    p=n1*n2*n3
+    print(p)
+
+multi()
+
+output:
+enter a number2
+enter a number3
+enter a number4
+24
+
+
+
+# without orgument with return value
+
+def multi():
+    n1=int(input('enter a number'))
+    n2=int(input('enter a number'))
+    n3=int(input('enter a number'))
+    p=n1*n2*n3
+    return p
+
+r=multi()
+print(r)
+
+output:
+enter a number2
+enter a number3
+enter a number4
+24
+    
+
+# with argument without return value:
+
+#user input
+
+def multi(n1,n2,n3):
+    p=n1*n2*n3
+    print(p)
+    
+multi(3,4,5)
+output:
+60
+
+
+##with argument without return value
+
+#user input
+
+def multi(a,b,c):
+    p=a*b*c
+    print(p)
+
+n1=int(input('enter'))
+n2=int(input('enter'))
+n3=int(input('enter'))
+multi(n1,n2,n3)
+
+output:
+enter2
+enter4
+enter6
+48
+
+##with argument with return value:
+
+#user input
+
+def multi(a,b,c):
+    p=a*b*c
+    return p
+
+n1=int(input('enter'))
+n2=int(input('enter'))
+n3=int(input('enter'))
+r=multi(n1,n2,n3)
+print(r)
+
+output:
+enter8
+enter7
+enter9
+504
+
+
+2.find factors of the given numbers using type2.
+
+def factors():
+    x=int(input('enter'))
+    for i in range(1,x+1):
+         if x%i==0:
+             print(i)
+
+r=factors()
+print(r)
+
+output:
+enter8
+1
+2
+4
+8
+None
+
+
+4.find out sum of digits of given number using function type 4.
+
+def digits(n):
+    sum=0
+    while n!=0:
+        rem=n%10
+        sum=sum+rem
+        n=n//10
+    return sum
+n=int(input('enter'))
+res=digits(n)
+print(res)
+
+output:
+enter34
+7
+enter343
+10
+
+
+##RECURSIVE OR RECURSION METHOD:
+
+program:
+def display():
+    n=int(input('enter'))
+    if n==1:
+         display()
+    else:
+        print('over')
+display()
+
+output:
+enter1
+enter1
+enter2
+over
+
+program:
+
+def fact(n):
+    if n==0:
+        return 1
+    return n*fact(n-1)
+result=fact(5)
+print(result)
+
+output:
+120
+
+'''LOGIC
+4!
+4*fact(3)
+4*3*fact(2)
+4*3*2*fact(1)
+4*3*2*1*fact(0)
+hence output is 24'''
+
+
+
+
+n=int(input('enter'))
+a=0
+b=1
+sum=0
+count=1
+
+while(count<=n):
+    print(sum,end=' ')
+    count+=1
+    a=b
+    b=sum
+    sum=a+b
+
+output:
+enter4
+0 1 1 2 
+
+
+
+
+
+
+      
+
+
