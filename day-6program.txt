@@ -1,0 +1,197 @@
+##EXCEPTION HANDLING:
+
+a=70
+b=7
+
+try:
+    print(a/b)
+except expection as e:
+    print('please note, number is not divisible by zero',e)
+
+print('bye')
+
+output:
+10.0
+bye
+
+
+##Whenever u open a file make sure u close it
+##file may be anything-prg,database...
+
+a=70
+b=7
+
+try:
+    print('opened resource')
+    print(a/b)
+    
+except expection as e:
+    print('dont give second number as zero',e)
+
+finally:
+    print('resource closed')
+
+output:
+opened resource
+10.0
+resource closed
+
+####
+a=6
+b=0
+
+try:
+    print('opened resource')
+    print(a/b)
+    
+except E
+xception as e:
+    print('dont give second number as zero',e)
+
+finally:
+    print('resource closed')
+
+output:
+opened resource
+dont give second number as zero division by zero
+resource closed
+
+
+
+#like specialiased doctors
+#for those specific error only those exception
+#block will get executed
+
+a=10
+
+try:
+    b=int(input('enter'))
+    print('resource open')
+    print(a/b)
+except ZeroDivisionError as e:
+    print('number cant divided by zero')
+except ValueError as e:
+    print('invalid input')
+except Exception as e:
+    print('other error')
+print('resource closeed')
+
+
+OUTPUT:
+
+enter12
+resource open
+0.8333333333333334
+resource closeed
+
+enter0
+resource open
+number cant divided by zero
+resource closeed
+
+enter4534.54
+invalid input
+resource closeed
+
+enterD
+invalid input
+resource closeed
+
+
+##2
+
+x=int(input('enter'))
+if x%2==0:
+    raise Exception ("x is even number.....correct")
+else:
+    print('x should be even')
+
+output:
+
+enter45
+x should be even
+
+enter12
+Traceback (most recent call last):
+  File "C:/Users/dell/AppData/Local/Programs/Python/Python311/exception.py", line 40, in <module>
+    raise Exception ("x is even number.....correct")
+Exception: x is even number.....correct
+
+
+###OOPS-OBJECT ORIENTED PROGRAMMING:
+
+
+program:
+
+class computer:            #class defination
+    def config(self):      #config is a function
+        print("yes")
+
+dell=computer()            #object 1
+dell.config()
+
+lenova=computer()          #object 2
+lenova.config()
+
+output:
+
+yes
+yes
+
+
+##CONSTRUCTOR
+
+class employee:
+    def __init__(self,name,id):
+        self.id=id
+        self.name=name
+
+    def display(self):
+        print(self.id,self.name)
+
+emp1=employee("navya",206)
+emp2=employee("sneha",203)
+
+emp1.display()
+emp2.display()
+
+output:
+
+206 navya
+203 sneha
+
+
+#variables and var.acess in class and method
+class computer:
+    a=10
+    b=20
+    print('class varaible inside the class',a)
+
+    def config (self):  #config(method) is a function
+        c=100
+        print('yes')
+        print('instant acess',self.b)
+
+lenova=computer()     #object 1
+print(lenova.a)
+print(lenova.a+lenova.b)
+dell=computer()       #object 2
+print(dell.b)
+lenova.config()
+
+output:
+
+class varaible inside the class 10
+10
+30
+20
+yes
+instant acess 20
+
+    
+
+
+
+
+
+

@@ -1,0 +1,130 @@
+####PROJECT-1-QUIZ GAME:
+
+
+q1='''who is indian prime minister?
+a.amith shab
+b.sonia gandhi
+c.narendra modi
+d.jagan'''
+q2='''who is the indian high commissioner in uk?
+a.vikram lal
+b.doraiswami
+c.donalt trum
+d.mohan sha'''
+q3='''how many countries are part of G20 summit?
+a.5
+b.10
+c.20
+d.21'''
+q4='''which country is taking presidency of G20 in 2023?
+a.usa
+b.russia
+c.newsland
+d.india'''
+q5='''NCC full form?
+a.national council country
+b.national cadet corps
+c.national cadet council
+d.national council corps'''
+q6='''which song received the 'golden globe' award from india?
+a.mehabooba from kgf
+b.natu natu from rrr
+c.kumkumala from brahmahastram
+d.srivalli from pushpa'''
+
+questions={q1:'c',q2:'b',q3:'c',q4:'d',q5:'b',q6:'b'}
+
+name=input('hi whats u r name')
+print('hello',name,'welcome to quiz')
+score=0
+for i in questions:
+    print()
+    print(i)
+    flag1=input('do u want to skip the quiz(yes/no)')
+    if flag1=="yes":
+        continue
+    ans=input('enter u r answer:')
+    if ans==questions[i]:
+        print('wow! u got one point')
+        score=score+1
+        print('u r score is',score)
+    else:
+        print('wrong ans , u lost one point')
+        score=score-1
+        print('u r score is',score)
+    flag2=input('do u want to quite the quiz(yes/no)')
+    if flag2=='yes':
+        break
+print('u r total score is',score)
+
+OUTPUT:
+
+hi whats u r namenavya
+hello navya welcome to quiz
+
+who is indian prime minister?
+a.amith shab
+b.sonia gandhi
+c.narendra modi
+d.jagan
+do u want to skip the quiz(yes/no)no
+enter u r answer:c
+wow! u got one point
+u r score is 1
+do u want to quite the quiz(yes/no)no
+
+who is the indian high commissioner in uk?
+a.vikram lal
+b.doraiswami
+c.donalt trum
+d.mohan sha
+do u want to skip the quiz(yes/no)b
+enter u r answer:b
+wow! u got one point
+u r score is 2
+do u want to quite the quiz(yes/no)no
+
+how many countries are part of G20 summit?
+a.5
+b.10
+c.20
+d.21
+do u want to skip the quiz(yes/no)no
+enter u r answer:c
+wow! u got one point
+u r score is 3
+do u want to quite the quiz(yes/no)no
+
+which country is taking presidency of G20 in 2023?
+a.usa
+b.russia
+c.newsland
+d.india
+do u want to skip the quiz(yes/no)no
+enter u r answer:d
+wow! u got one point
+u r score is 4
+do u want to quite the quiz(yes/no)no
+
+NCC full form?
+a.national council country
+b.national cadet corps
+c.national cadet council
+d.national council corps
+do u want to skip the quiz(yes/no)no
+enter u r answer:b
+wow! u got one point
+u r score is 5
+do u want to quite the quiz(yes/no)no
+
+which song received the 'golden globe' award from india?
+a.mehabooba from kgf
+b.natu natu from rrr
+c.kumkumala from brahmahastram
+d.srivalli from pushpa
+do u want to skip the quiz(yes/no)no
+enter u r answer:b
+wow! u got one point
+u r score is 6
+do u want to quite the quiz(yes/no)no
+u r total score is 6
