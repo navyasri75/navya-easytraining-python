@@ -1,0 +1,342 @@
+##LAMBDA FUNCTION:
+
+
+l=[1,2,3,4]
+r=map(lambda e:e+e,l)
+print(list(r))
+
+P=map(lambda s:pow(s,3),l)
+print(list(P))
+
+name="navya"
+(lambda name:print(name))(name)
+
+
+OP:
+[2, 4, 6, 8]
+[1, 8, 27, 64]
+navya
+
+###
+from abc import ABC,abstractmethod
+class abstractdemo(ABC):
+    @abstractmethod
+    def display(self):
+        none
+    @abstractmethod
+    def show (self):
+        none
+###changing abstract to concreat
+class demo(abstractdemo):
+    def display(self):
+        print("abstractmethod")
+    def show (self):
+        print("2nd function")
+obj=demo()
+obj.display()
+obj.show()
+
+op:
+abstractmethod
+2nd function
+
+###INHERITANCE:
+
+##one parent and one child class
+
+class parent:
+    def display(show):
+        print("parent class")
+
+##derived class
+
+class child(parent):
+    def show (self):
+        print("child class")
+
+c=child()
+c.display()
+c.show()
+
+op:
+parent class
+child class
+
+program:
+
+class a:
+    n=30
+class b(a):
+    def obstract(self):
+        c=self.n*2
+        print(c)
+objet=b()
+objet.obstract()
+
+op:
+60
+
+#Multiple inheritance
+class dad:
+  def ddisplay(self):
+    print("dad cls")
+class mom:
+  def mdisplay(self):
+    print("mom cls")
+class child(dad,mom):
+  def cdisplay(self):
+    print("child cls")
+
+obj=child()
+obj.ddisplay()
+obj.mdisplay()
+obj.cdisplay()
+OUTPUT:
+dad cls
+mom cls
+child cls
+
+#multilevel inheritance
+class grandparent:
+  def display(self):
+    print("grandparent class")
+class parent(grandparent):
+  def show(self):
+    print("parent class")
+class child(parent):
+  def cdisplay(self):
+    print("child class")
+c1=child()
+c1.display()
+c1.show()
+c1.cdisplay()  
+OUTPUT:
+grandparent class
+parent class
+child class
+
+#hierarchial inheritance
+class parent:
+  def display(self):
+    print("class parent")
+class child1(parent):
+  def c1show(self):
+    print("child1 class")
+class child2(parent):
+  def c2show(self):
+    print("child2 class")
+c1=child1()
+c1.c1show()
+c1.display()
+c2=child2()
+c2.c2show()
+c2.display()         
+OUTPUT:
+child1 class
+class parent
+child2 class
+class parent
+
+#hybrid inheritance
+class parent:
+  def display(self):
+ print("parent class")
+class child1(parent):
+  def c1show(self):
+    print("child1 class")
+class child2(parent):
+  def c2show(self):
+    print("child2 class")
+class kid1(child1):
+  def k1display(self):
+    print("kid1 class")
+class kid2(child1):
+  def k2display(self):
+    print("kid2 class")
+class kidd1(child2):
+  def k1show(self):
+    print("kidd1 class")
+class kidd2(child2):
+  def k2show(self):
+    print("kidd2 class")
+c1=kid1()
+c1.c1show()
+c1.display()
+c1.k1display()
+c2=kid2()
+c2.c1show()
+c2.display()
+c2.k2display()
+c3=kidd1()
+c3.c2show()
+c3.k1show()
+c3.display()
+c4=kidd2()
+c4.c2show()
+c4.display()
+c4.k2show()  
+OUTPUT:
+child1 class
+parent class
+kid1 class
+child1 class
+parent class
+kid2 class
+child2 class
+kidd1 class
+parent class
+child2 class
+parent class
+kidd2 class
+
+#program:
+print whether the given number is happy number are not
+HAPPY NUMBER PROGRAM:
+#Happy number or not
+def happyno(n):
+    sum=0
+    while n>0:   
+        rem=n%10
+        sum+=rem*rem
+        n=n//10
+    return sum
+num=int(input("Enter a number:"))
+result=num
+while result!=1 and result!=4:
+    result=happyno(result)
+if result==1:
+    print(num," is a happy number")
+#in doing this process if number 4  or 20 or 42 or 145 occurs it will be repeated a lot times
+elif result==4:
+    print(num," is not a happy number")
+Output:
+Enter a number:13
+13 is a happy number
+
+
+def happy(n):
+    s=r=0
+    while(n>=0):
+        for i in range (0,len(str(n))+100):
+            r=n%10
+            s=s+r**2
+            n=n//10
+        return s
+
+n=int(input("enter a num"))
+res=n
+while(res!=1 and res!=4):
+    res=happy(res)
+if res==1:
+    print("happy")
+else:
+    print("unhappy")
+op:
+
+enter a num45
+unhappy
+enter a num100
+happy
+enter a num13
+happy
+enter a num58
+unhappy
+enter a num11
+happy
+
+
+##protected
+
+class encap:
+    _a=10
+    c=20
+    def encapfunction(self):
+        _b=200
+        print('encap function-accesing protected')
+        print(self._a+10)
+
+obj=encap()
+print(obj._a)
+obj.encapfunction()
+print(obj.c)
+
+
+##private
+
+class encap:
+    __a=10
+    print(__a)
+    def encapfuntion(self):
+        print('encap function')
+        print(self.__a)
+obj=encap()
+obj.encapfuntion()
+print(obj.__a)
+
+op:
+10
+encap function-accesing protected
+20
+20
+10
+encap function
+10
+Traceback (most recent call last):
+  File "C:/Users/dell/AppData/Local/Programs/Python/Python311/data structure.py", line 46, in <module>
+    print(obj.__a)
+AttributeError: 'encap' object has no attribute '__a'
+
+
+##METHOD OVERLOADING:
+
+class Moverload:
+    def display(self,a=None,b=None):
+        print(a,b)
+obj=Moverload()
+obj.display()
+print('without arguments')
+
+obj.display(10)
+print('with one argument')
+
+obj.display(10,60)
+print('with all arguments')
+
+OP:
+None None
+without arguments
+10 None
+with one argument
+10 60
+with all arguments
+
+
+##OVERRIDIDNG:
+class vijayawada():
+    def placename(self):
+        print('vijayawada placename is klu')
+    def student(self):
+        print("yes-vijayawada")
+    def which_year(self):
+        print("3rd year")
+class hyd():
+    def placename(self):
+        print("hyd placename is hyd-klu")
+    def student(self):
+        print("yes-hyd")
+    def which_year(self):
+        print('3rd year hyd')
+
+obj_vij=vijayawada()
+obj_hyd=hyd()
+for details in (obj_vij,obj_hyd):
+    details.placename()
+    details.student()
+    details.which_year()
+op:
+vijayawada placename is klu
+yes-vijayawada
+3rd year
+hyd placename is hyd-klu
+yes-hyd
+3rd year hyd

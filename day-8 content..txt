@@ -1,0 +1,44 @@
+
+##DATA STRUCTURE:
+
+*HELPS to write efficient programs
+*linear-array--linked list--stack--queue --matrix
+*non linear-binary tree--heap--hash table--graph
+*linear--storing data sequentially
+*non linear--no sequencial style required 
+
+ STATIC(fixed)-array
+ DYNAMIC(not fixed)-list
+                    stack
+                  
+##LINKED LIST:---as the name says list of items which are linked with one another.(EG:-train)
+
+TYPES:
+--->singly
+--->doubly
+--->circular
+
+every node has 2 segments called data & address
+-->1st node is head
+-->last node is tail11:36 25-02-2023
+-->head contains address
+-->last segment is null
+
+##CREATING LINKED LIST:
+step-1:create the node 
+step-2:partition the node with two segments--data and none 
+step-3:add value into the blank node 
+step-4:mark the node as head 
+step-5:create the next node by following the above steps
+step-6:establish link between first node and the second node
+
+--displaying linked list--
+traverse is required from first node till tail node in order to display existing linked list
+
+##OPERATIONS:-
+-->insert-
+         a.beginning
+         b.end
+         c.position 
+-->delete
+-->search

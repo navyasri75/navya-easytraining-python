@@ -1,0 +1,239 @@
+
+
+##CREATING NODE-DECLARATION & DEFINATION:
+class node:
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+
+class singlelinkedlist:
+    def __init__(self):
+        self.head=None
+
+    def display(self):
+        if self.head is None:
+            print('linked list is emptyy')
+        else:
+            temp=self.head #temp = fitst node
+            while temp:
+                print(temp.data,"--",end=" ")
+                temp=temp.next
+
+obj=singlelinkedlist()
+n=node(43)
+obj.head=n
+n1=node(45)
+obj.head.next=n1
+n2=node(47)
+n1.next=n2
+obj.display()
+
+op:
+43 -- 45 -- 47 -- 
+
+
+##CREATEING LINKED LIST:
+
+class node:
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class linkedlist:
+    def __init__(self):
+        self.head=None
+
+    def display(self):
+        if self.head==None:
+            print("linked list is empty")
+        else:
+            temp=self.head
+            while temp:
+                print(temp.data,"--",end='')
+                
+                temp=temp.next
+obj=linkedlist()
+n=node("W")
+obj.head=n
+m=node("I")
+obj.head.next=m
+o=node("N")
+m.next=o
+p=node("N")
+o.next=p
+q=node("E")
+p.next=q
+r=node("R")
+q.next=r
+obj.display()
+
+OP:
+W --I --N --N --E --R --
+WINNER
+
+
+##OPERATIONS-INSERT-BEGINNING:
+class node:
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+
+class linked_list:
+    def __init__(self):
+        self.head=None
+
+    def insert_beginning(self,data):
+        nn=node(data)
+        nn.next=self.head
+        self.head=nn
+
+    def display(self):
+        if self.head is None:
+            print("node is empty")
+        else:
+            temp=self.head
+            while temp:
+                print(temp.data,"--",end='')
+                temp=temp.next
+
+obj=linked_list()
+n=node(1)
+obj.head=n
+n1=node(2)
+obj.head.next=n1
+n2=node(3)
+n1.next=n2
+n3=node(4)
+n2.next=n3
+obj.insert_beginning(0)
+obj.display()
+    
+op:
+0 --1 --2 --3 --4 --
+
+
+##OPERATIONS-INSERT-END:
+class node:
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+
+class linked_list:
+    def __init__(self):
+        self.head=None
+
+    def insert_end(self,data):
+        nn=node(data)
+        temp=self.head
+        while temp.next:
+            temp=temp.next
+        temp.next=nn
+    def display(self):
+        if self.head is None:
+            print("node is empty")
+        else:
+            temp=self.head
+            while temp:
+                print(temp.data,"--",end='')
+                temp=temp.next
+
+obj=linked_list()
+n=node(1)
+obj.head=n
+n1=node(2)
+obj.head.next=n1
+n2=node(3)
+n1.next=n2
+n3=node(4)
+n2.next=n3
+obj.insert_end(0)
+obj.display()
+
+op:
+1 --2 --3 --4 --0 --
+
+
+##OPERATIONS-INSERT-BETWEEN NODES:
+class node:
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+
+class linkedlist:
+    def __init__(self):
+        self.head=None
+
+    def display(self):
+        if self.head is None:
+            print('node is empty')
+        else:
+            temp=self.head
+            while temp:
+                print(temp.data," ",end='')
+                temp=temp.next
+
+    def insert_position(self,pos,data):
+        np=node(data)
+        temp=self.head
+        for i in range(pos):
+            temp=temp.next
+        np.next=temp.next
+        temp.next=np
+
+obj=linkedlist()
+n=node(1)
+obj.head=n
+n1=node(2)
+obj.head.next=n1
+n2=node(3)
+n1.next=n2
+n3=node(4)
+n2.next=n3
+obj.insert_position(2,5)
+obj.display()
+
+op:
+1  2  5  3  4 
+
+
+##SINGLE LINKED LIST WITH USER INPUT:
+class node:
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+
+class linkedlist:
+    def __init__(self):
+        self.head=None
+        self.last_node=None
+
+    def append(self,data):
+        if self.last_node is None:
+            self.head=node(data)
+            self.last_node=self.head
+        else:
+            self.last_node.next=node(data)
+            self.last_node=self.last_node.next
+
+    def display(self):
+        current=self.head
+        while current is not None:
+            print(current.data,end=' ')
+            current=current.next
+a_llist=linkedlist()
+n=int(input('how many elements you want to print:'))
+for i in range(n):
+    data=int(input('enter data items:'))
+    a_llist.append(data)
+print('the linked list',end='')
+a_llist.display()    
+
+op:
+how many elements you want to print:3
+enter data items:2
+enter data items:3
+enter data items:4
+the linked list2 3 4 
+
+
+
+

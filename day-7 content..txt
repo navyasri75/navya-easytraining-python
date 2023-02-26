@@ -1,0 +1,45 @@
+##LAMBDA FUNCTION:
+
+lambda functon its called as anonymous function when we want to use function concept alone
+ without using function name there we apply concept of lamda function.
+
+PROGRAM:
+After creating a list with even numbers with in the range 1to 15 now apply lambda function and 
+create a new list we should have sqaure roots of elements.
+
+
+###Four pillars of OOPS:
+
+1.obtraction-hidind the implementation part showing what is required for the user
+             EG:"EXE FILE"
+2.encapsulation-We can made class or method as obstract,opposite  to obstract is concrete. 
+                binding data and function into a single entity.
+                PUBLIC------one class info can be accessed by any other class
+                PRIVATE-----can used where it is declared/no in inheritance class.
+                PROTECTED---can be accessed only where it got declared----whichever class
+                            inherited from this class there also we can use.
+3.inheritance-base class and derived class
+                  derived class will inherit properties of base class
+              base class---parent class
+              derived class---child class.
+         types of inheritance: 
+                    1.single inheritance
+                    2.multiple inheritance
+                    3.multi level inheritance
+                    4.hierarchical inheritance
+                    5.hybrid inheritance
+4.polymorphism 
+
+##polymorphism
+
+one item or same item used for differenr purpose 
+
+TYPES:
+1.overloading 
+ a.operator overloading 
+ b.method overloading 
+2.overriding-If s method is defective or cant be used inside derived class it will take it 
+from its base class or parent class
+
+
+
